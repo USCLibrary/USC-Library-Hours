@@ -2,7 +2,7 @@ var output = '';
   var current_week = 0;
   jQuery( document ).ready(function($) {
    if(document.getElementById("hours-results")){
-    text = $.getJSON("https://api3-au.libcal.com/api_hours_grid.php?iid=1254&lid=3245&format=json&weeks=4&systemTime=0",
+    text = $.getJSON("https://api3-au.libcal.com/api_hours_grid.php?iid=1254&format=json&weeks=4&systemTime=0",
       function(data) {
         $.each(data.locations[0].weeks, function (week, days) {
           hidden = 'hidden';
